@@ -1,0 +1,3 @@
+gcloud container clusters create starbucks-cluster \
+  --num-nodes=2 \
+  --zone=asia-south1-a
