@@ -13,7 +13,12 @@ spec:
         app: starbucks
     spec:
       containers:
-      - name: starbucks-container
-        image: YOUR_DOCKERHUB_USERNAME/starbucks-app:latest
+      - name: starbucks
+        image: atanu03/starbucks:latest
         ports:
         - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+          limits:
+            cpu: "500m"
